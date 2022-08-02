@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/0e1cd60475.js" crossorigin="anonymous"></script>
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<!-- nav -->
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+        <!-- iNeuron LOGO goes here -->
+        <a class="navbar-brand" href="https://ineuron.ai/"><img src="./assets/ineuron-logo.png" alt=""></a>
+        <!-- For Mobile devices -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Courses
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-uppercase" href="#">Web Development</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">Full
+                                        Stack Web Development</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">JavaScript</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">Angular</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">React</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">Vue</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                target="_blank">Mobile
+                                Development</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">React
+                                        Native </a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">ANDROID</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">KOTLIN</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">IOS</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">FLUTTER</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                target="_blank">BLOCKCHAIN</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">Block
+                                        Chain Masters</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">NFT</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">SOLIDITY</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">WEB
+                                        3.0</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">Vue</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                target="_blank">Data
+                                Science</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank"> Data
+                                        Science Full Stack Development</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">PYTHON</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">PYTHON PROJECTS</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">STAT</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">MACHINE LEARNING</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                target="_blank">BIG DATA</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">BIG
+                                        DATA MASTERS</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">BIG
+                                        DATA CLOUD</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">TECH
+                                        STACK</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                target="_blank">CYBER
+                                SECURITY</a>
+                            <ul class="dropdown-menu dropdown-submenu">
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">CYBER
+                                        SECURITY MASTERS</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">CYBER
+                                        SECURITY INTERVIEW</a></li>
+                                <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/courses"
+                                        target="_blank">CYBER
+                                        SECURITY PROJECT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="nav-link active text-uppercase" aria-current="page" href="https://ineuron.ai/one-neuron"
+                        target="_blank">One
+                        Neuron</a></li>
+                <li><a class="nav-link active text-uppercase" aria-current="page" href="https://jobs.ineuron.ai/"
+                        target="_blank">Job Portal</a>
+                </li>
+                <li><a class="nav-link active text-uppercase" aria-current="page" href="https://internship.ineuron.ai/"
+                        target="_blank">Internship
+                        Portal</a></li>
+                <li><a class="nav-link active text-uppercase" aria-current="page" href="https://affiliate.ineuron.ai/"
+                        target="_blank">Become an
+                        affiliate</a></li>
+                <li><a class="nav-link active text-uppercase" aria-current="page" href="https://halloffame.ineuron.ai/"
+                        target="_blank">Hall of
+                        fame</a></li>
+                <li><a class="nav-link active text-uppercase" aria-current="page" href="https://blog.ineuron.ai/"
+                        target="_blank">Blog</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Company
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/about-us">About Us</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="https://hackathon.ineuron.ai/">Hackathon</a>
+                        </li>
+                        <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/job-guarantee">Job
+                                Guarantee</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="https://ineuron.ai/privacy-policy">Privacy
+                                Policy</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="What do you want to learn?"
+                    aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- hero -->
+<section class="hero">
+    <div class="wrapper">
+        <div class="slideshows">
+            <div class="slideshow slideshow--hero">
+                <div class="slides">
+                    <div class="slide slide1"></div>
+                    <div class="slide slide2"></div>
+                    <div class="slide slide3"></div>
+                </div>
+            </div>
+            <div class="slideshow slideshow--contrast slideshow--contrast--before">
+                <div class="slides">
+                    <div class="slide slide1"></div>
+                    <div class="slide slide2"></div>
+                    <div class="slide slide3"></div>
+                </div>
+            </div>
+            <div class="slideshow slideshow--contrast slideshow--contrast--after">
+                <div class="slides">
+                    <div class="slide slide1"></div>
+                    <div class="slide slide2"></div>
+                    <div class="slide slide3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-down">
+            <a href="#icons"><i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </div>
+
+</section>
+<!-- section-1 -->
+<section id="icons" class="icons-row">
+    <div class="text-center text-uppercase">
+        <p class="display-5"><i class="fa-solid fa-quote-right"></i>discipline, devotion & consisteny are the key of
+            <span class="underline">success</span>
+        </p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-12 col-xxl-4 text-center my-icon-row">
+                <figure>
+                    <img src="./assets/books-icon.svg" class="img-fluid my-img" alt="">
+                </figure>
+                <span id="value" class="display-5 num" data-val="400">00</span>+
+                <h5 class="display-5">Different Courses</h5>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 col-xxl-4 text-center my-icon-row">
+                <figure>
+                    <img src="./assets/student-iocn.svg" class="img-fluid my-img" alt="">
+                </figure>
+                <span class="display-5 num" data-val="1200">00</span>+
+                <h5 class="display-5">Students Enrolled</h5>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 col-xxl-4 text-center my-icon-row">
+                <figure>
+                    <img src="./assets/credit-card-icon.svg" class="img-fluid my-img" alt="">
+                </figure>
+                <span class="display-5 num" data-val="1000">00</span>+
+                <h5 class="display-5">Successful Transition</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- section-2 -->
+<section class="hall-of-fame py-5">
+    <div class="text-center text-uppercase">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <p class="display-5 "><i class="fa-solid fa-quote-right"></i>Cream Of The Crop</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="col-md-6 col-10 mx-auto my-auto col-xxl-8">
+                                <div class="card d-flex align-items-center my-2 swiper-card">
+                                    <img class="card-img-top rounded-circle my-1 swiper-img "
+                                        src="./assets/hall-of-fame-1.jpeg" alt="">
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title">Chitra Patgar</h3>
+                                        <p class="card-text designation text-center">Cognizant(genc next) Programmer
+                                            Analyst</p>
+                                        <a href="">
+                                            <i class="fa-brands fa-linkedin mx-3"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-md-6 col-10 mx-auto my-auto col-xxl-8">
+                                <div class="card d-flex align-items-center my-2 swiper-card">
+                                    <img class="card-img-top rounded-circle my-1 swiper-img "
+                                        src="./assets/hall-of-fame-2.jpeg" alt="">
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title">Aakash </h3>
+                                        <p class="card-text designation">Amazon , Software Development Engineer 1</p>
+                                        <a href="">
+                                            <i class="fa-brands fa-linkedin mx-3"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-md-10 col-10 mx-auto my-auto col-xxl-8">
+                                <div class="card d-flex align-items-center my-2 swiper-card">
+                                    <img class="card-img-top rounded-circle my-1 swiper-img "
+                                        src="./assets/hall-of-fame-5.jpeg" alt="">
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title">Shrivatsa G</h3>
+                                        <p class="card-text designation">ECOLAB, trainee software developer associate
+                                        </p>
+                                        <a href="">
+                                            <i class="fa-brands fa-linkedin mx-3"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="col-md-10 col-10 mx-auto my-auto col-xxl-8">
+                                <div class="card d-flex align-items-center my-2 swiper-card">
+                                    <img class="card-img-top rounded-circle my-1 swiper-img "
+                                        src="./assets/hall-of-fame-4.jpeg" alt="">
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title">Jay Prakash Bind</h3>
+                                        <p class="card-text designation">Wells Fargo, Senior Program Associate </p>
+                                        <a href="">
+                                            <i class="fa-brands fa-linkedin mx-3"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="col-md-6 col-10 mx-auto my-auto col-xxl-8">
+                                <div class="card d-flex align-items-center my-2 swiper-card">
+                                    <img class="card-img-top rounded-circle my-1 swiper-img "
+                                        src="./assets/hall-of-fame-3.jpeg" alt="">
+                                    <div class="card-body text-center">
+                                        <h3 class="card-title">Sameer Kumar</h3>
+                                        <p class="card-text designation">Bajaj Finserv, Senior Data Scientist</p>
+                                        <a href="">
+                                            <i class="fa-brands fa-linkedin mx-3"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="d-flex align-items-center my-5 mx-auto view-more-btn"> <a href="https://halloffame.ineuron.ai/"
+            target="_blank">VIEW MORE</a></button>
+</section>
+
+<!-- section-3 -->
+<section class="tech-avengers py-5">
+    <div class="text-center text-uppercase">
+        <i class="fa-solid fa-building-columns"></i>
+        <p class="display-5 products-header">Thanos Of Tech</p>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/tech-avengers-1.jpg" alt="">
+                    <h3 class="text-center name">HITESH CHOUDHARY</h3>
+                    <p class="text-center designation">CTO</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/kiran-square.png" alt="">
+                    <h3 class="text-center name">KIRAN SAHU</h3>
+                    <p class="text-center designation">MENTOR</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/shukla-sir.png" alt="">
+                    <h3 class="text-center name">SAURABH SHUKLA</h3>
+                    <p class="text-center designation">SENIOR VP</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/amresh-sir.png" alt="">
+                    <h3 class="text-center name">AMRESH BHARTI</h3>
+                    <p class="text-center designation">VP Marketing</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/gaurav-sir.png" alt="">
+                    <h3 class="text-center name">GAURAN SEN</h3>
+                    <p class="text-center designation">SENIOR VP</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/krish-sir.png" alt="">
+                    <h3 class="text-center name">KRISH NAIK</h3>
+                    <p class="text-center designation">CIO</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assetS/mukesh-sir.png" alt="">
+                    <h3 class="text-center name">MUKESH OTWANI</h3>
+                    <p class="text-center designation">VP AUTOMATION</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/navin-sir.png" alt="">
+                    <h3 class="text-center name">NAVEEN REDDY</h3>
+                    <p class="text-center designation">Senior VP</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assetS/pal-sir.png" alt="">
+                    <h3 class="text-center name">SAURANGSHU PAL</h3>
+                    <p class="text-center designation">MENTOR</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/saksham-sir.png" alt="">
+                    <h3 class="text-center name">SAKSHAM CHOUDHARY</h3>
+                    <p class="text-center designation">CYBER SECURITY LEAD</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/sudhanshu-sir.png" alt="">
+                    <h3 class="text-center name">SUDHANSHU KUMAR</h3>
+                    <p class="text-center designation">AI ENGINEER & CEO</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-10 mx-auto my-auto col-xxl-4">
+                <div class="card d-flex align-items-center my-2 card-avengers">
+                    <img class="img-fluid rounded-circle my-2" src="./assets/sunny-sir.png" alt="">
+                    <h3 class="text-center name">SUNNY BHAVEEN CHANDRA</h3>
+                    <p class="text-center designation">DATA SCIENTIST</p>
+                    <a href="">
+                        <i class="fa-brands fa-github mx-3"></i>
+                        <i class="fa-brands fa-linkedin mx-3"></i>
+                        <i class="fa-brands fa-twitter mx-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- section-4 -->
+<section class="our-products py-5">
+    <div class="text-center text-uppercase">
+        <i class="fa-brands fa-adversal"></i>
+        <p class="display-5 products-header">Our Products</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12 col-xxl-4 text-center my-icon-row">
+                    <figure>
+                        <img src="./assets/jobPortal-icon.svg" class="img-fluid my-img" alt="">
+                    </figure>
+                    <p class="desc">Job Portal</p>
+                    <p class="text-long">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 col-xxl-4 text-center my-icon-row">
+                    <figure>
+                        <img src="./assets/Internship-icon.svg" class="img-fluid my-img" alt="">
+                    </figure>
+                    <p class="desc">Job Portal</p>
+                    <p class="text-long">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12 col-xxl-4 text-center my-icon-row">
+                    <figure>
+                        <img src="./assets/affilitatePortal-icon.svg" class="img-fluid my-img" alt="">
+                    </figure>
+                    <p class="desc">Job Portal</p>
+                    <p class="text-long">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 col-xxl-6 text-center my-icon-row">
+                    <figure>
+                        <img src="./assets/halloffame-icon.svg" class="img-fluid my-img" alt="">
+                    </figure>
+                    <p class="desc">Job Portal</p>
+                    <p class="text-long">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 col-xxl-6 text-center my-icon-row">
+                    <figure>
+                        <img src="./assets/blog-icon.svg" class="img-fluid my-img" alt="">
+                    </figure>
+                    <p class="desc">Job Portal</p>
+                    <p class="text-long">Use exceptional templates for a stand-out resume minus the sign up process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<body>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/action.js"></script>
+</body>
+
+</html>
