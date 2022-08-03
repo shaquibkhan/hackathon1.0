@@ -136,6 +136,48 @@ figure img {
 figure img:hover {
   animation: shake 0.5s;
 }
+.dynamo-companies{
+  height: 30vh;
+}
+.comp-img-slider{
+  background-color: #d1e8e2;
+  width:75%;
+  height: 25vh;
+  background-image: url('../assets//achiever-company-14.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: changeImage 20s linear infinite;
+}
+.dynamo-companies p{
+  color: #000;
+}
+@media (max-width:500px){
+.comp-img-slider{
+  height: 22vh;
+}
+}
+@media (max-width:450px){
+  .comp-img-slider{
+    height: 18vh;
+  }
+}
+@keyframes changeImage{
+  0%{background-image: url('../assets/achiever-company-1.png');}
+  7%{background-image: url('../assets/achiever-company-2.png');}
+  14%{background-image: url('../assets/achiever-company-3.png');}
+  21%{background-image: url('../assets/achiever-company-4.png');}
+  28%{background-image: url('../assets/achiever-company-5.png');}
+  35%{background-image: url('../assets/achiever-company-6.png');}
+  42%{background-image: url('../assets/achiever-company-7.png');}
+  49%{background-image: url('../assets/achiever-company-8.png');}
+  56%{background-image: url('../assets/achiever-company-9.png');}
+  63%{background-image: url('../assets/achiever-company-10.png');}
+  70%{background-image: url('../assets/achiever-company-11.png');}
+  77%{background-image: url('../assets/achiever-company-12.png');}
+  84%{background-image: url('../assets/achiever-company-13.png');}
+  91%{background-image: url('../assets/achiever-company-14.png');}
+  100%{background-image: url('../assets/achiever-company-15.png');}
+}
 .hall-of-fame{
   background-image: url('../assets/fame-bg.jpg');
   background-repeat: no-repeat;
@@ -164,11 +206,33 @@ figure img:hover {
 .card-text{
   font-size: .8rem;
 }
+.learning-path{
+  background-image: url('../assets/learning-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.learning-header{
+  color: #fff;
+}
 .tech-avengers{
   background-image: url('../assets/avengers-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.fa-chalkboard-user{
+  color: #fff;
+  font-size: 5rem;
+}
+/* accordion styling */
+.accordion-button:not(.collapsed){
+  background-color: #116466;
+  border: none;
+  color: #fff;
+}
+.accordion-button{
+  background-color: #d1e8e2;
 }
 .fa-building-columns, .fa-graduation-cap, .fa-adversal{
   color: #116466;
@@ -274,7 +338,7 @@ figure img:hover {
   animation: 20s slides-set-1 -0.1s infinite;
 }
 .slideshow--hero .slide2 {
-  background-image: url(../assets/carousel-img-2.jpg);
+  background-image: url(../assets/hackathon-bg.PNG);
   animation: 20s slides-set-2 -0.1s infinite;
 }
 .slideshow--hero .slide3 {
@@ -500,8 +564,7 @@ figure img:hover {
                                                           /* swiper code */
 
 .swiper {
-  /* width: 100%;
-  height: 100%; */
+  width: 950px;
 }
 
 .swiper-slide {
@@ -511,7 +574,13 @@ figure img:hover {
   justify-content: center;
   position: relative;
 }
-
+/* .swiper-slide img{
+  display: block;
+  width: 100%;
+} */
+.swiper-scrollbar.swiper-scrollbar-horizontal{
+  display: none;
+}
 
 @media only screen and (min-width: 769px) {
   .swiper-slide:first-child {
@@ -548,5 +617,58 @@ figure img:hover {
     transform: translateX(-55%);
   }
 }
+.card-learning img{
+  width:300px;
 
+}
+/* .card-learning:hover {
+  animation: pulse;
+  animation-duration: 2s;
+  background-color: #43beac;
+  border-left: 20px solid #116466;
+} */
+.card-learning:hover .fa-star{
+  color: #66FCF1;
+}
+/* .card-learning:hover .live-course-name, .card-learning:hover .live-course-tutor , .card-learning:hover .fa-indian-rupee-sign{
+  color: #fff;
+} */
+.live-course-name{
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-family: Merriweather;
+}
+.live-course-tutor{
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: Merriweather;
+}
+.fa-indian-rupee-sign, .fa-signal-stream{
+  color: #43beac;
+}
+.live-link{
+  text-decoration: none;
+  color:#fff
+}
+.live-btn{
+  padding: 1rem;
+  background-color: #45A29E;
+  color: #fff;
+  border: none;
+}
+.fa-star{
+  color: #116466;
+}
+footer{
+  background-color: #116466;
+}
+footer p{
+  border-bottom: 3px solid #fff;
+  color: #fff;
+  font-size: 1.3rem;
+}
+footer ul li{
+  list-style-type: none;
+  color: #d1e8e2;
+}
 
