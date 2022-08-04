@@ -117,12 +117,16 @@ No media query for `xs` since this is the default in Bootstrap */
   height: 100vh;
 }
 
-.fa-arrow-down{
+.fa-chevron-down{
    font-size: 5rem;
     position: relative;
-    /* top: 100px; */
     z-index: 1;
-  color: #116466;
+  color: #fff;
+  background-color: #116466;
+  border-radius: 50%;
+}
+.fa-chevron-down:hover{
+  color:#43beac
 }
 .icons-row {
   background-color: #d1e8e2;
@@ -296,6 +300,7 @@ figure img:hover {
 }
 .card-avengers {
   background-color: #d1e8e2;
+  width: 18rem;
 }
 .card-avengers a, .swiper-card a{
   text-decoration: none;
@@ -630,10 +635,6 @@ figure img:hover {
   justify-content: center;
   position: relative;
 }
-/* .swiper-slide img{
-  display: block;
-  width: 100%;
-} */
 .swiper-scrollbar.swiper-scrollbar-horizontal{
   display: none;
 }
@@ -677,18 +678,10 @@ figure img:hover {
   width:300px;
 
 }
-/* .card-learning:hover {
-  animation: pulse;
-  animation-duration: 2s;
-  background-color: #43beac;
-  border-left: 20px solid #116466;
-} */
+
 .card-learning:hover .fa-star{
   color: #66FCF1;
 }
-/* .card-learning:hover .live-course-name, .card-learning:hover .live-course-tutor , .card-learning:hover .fa-indian-rupee-sign{
-  color: #fff;
-} */
 .live-course-name{
   font-size: 1.6rem;
   text-transform: capitalize;
@@ -733,9 +726,11 @@ footer{
   
   }
 footer p{
-  border-bottom: 3px solid #fff;
   color: #fff;
   font-size: 1.3rem;
+}
+footer .line{
+  border-bottom: 3px solid #fff;
 }
 footer ul li{
   list-style-type: none;
@@ -746,4 +741,11 @@ footer ul li{
 }
 .fa-location-dot, .fa-envelope{
   font-size: 1.2rem;
+}
+.footer-icons i, .fa-chevrons-down{
+  font-size: 1rem;
+  color: #fff;
+}
+.footer-icons i:hover{
+  color: #66FCF1;
 }
