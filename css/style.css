@@ -116,18 +116,6 @@ No media query for `xs` since this is the default in Bootstrap */
   position: absolute;
   height: 100vh;
 }
-
-.fa-chevron-down{
-   font-size: 5rem;
-    position: relative;
-    z-index: 1;
-  color: #fff;
-  background-color: #116466;
-  border-radius: 50%;
-}
-.fa-chevron-down:hover{
-  color:#43beac
-}
 .icons-row {
   background-color: #d1e8e2;
 }
