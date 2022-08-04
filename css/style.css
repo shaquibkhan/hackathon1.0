@@ -45,6 +45,14 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.bounce{
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+.animated{
+   animation-duration: 2.5s;
+   animation-fill-mode: both;
+}
 
 /* X-Small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap */
@@ -139,6 +147,9 @@ figure img:hover {
 .dynamo-companies{
   height: 30vh;
 }
+.dynamo-companies p{
+  color: #000;
+}
 .comp-img-slider{
   background-color: #d1e8e2;
   width:75%;
@@ -147,9 +158,6 @@ figure img:hover {
   background-repeat: no-repeat;
   background-position: center;
   animation: changeImage 20s linear infinite;
-}
-.dynamo-companies p{
-  color: #000;
 }
 @media (max-width:500px){
 .comp-img-slider{
@@ -178,11 +186,42 @@ figure img:hover {
   91%{background-image: url('../assets/achiever-company-14.png');}
   100%{background-image: url('../assets/achiever-company-15.png');}
 }
+
+.hack-img-slider{
+  /* background-color: #d1e8e2; */
+  width:75%;
+  height: 25vh;
+  background-image: url('../assets//hack-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: changeHackImage 20s linear infinite;
+}
+@media (max-width:500px){
+.comp-img-slider{
+  height: 22vh;
+}
+}
+@media (max-width:450px){
+  .comp-img-slider{
+    height: 18vh;
+  }
+}
+@keyframes changeHackImage{
+  0%{background-image: url('../assets/hack-2.png');}
+  20%{background-image: url('../assets/hack-3.png');}
+  40%{background-image: url('../assets/hack-4.png');}
+  60%{background-image: url('../assets/hack-5.png');}
+  80%{background-image: url('../assets/hack-6.png');}
+  
+ 
+}
 .hall-of-fame{
   background-image: url('../assets/fame-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+   background-attachment: fixed;
+   
 }
 .swiper-card{
   background-color: #55BCC9;
@@ -208,9 +247,23 @@ figure img:hover {
 }
 .learning-path{
   background-image: url('../assets/learning-bg.jpg');
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-position: center;
   background-size: cover;
+
+
+  -webkit-animation: backgroundScroll 15s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation: backgroundScroll 15s linear infinite;
+  animation-fill-mode: forwards;
+}
+.partnered-prod{
+  background-image: url('../assets/partner-prod.PNG');
+  height: 50vh;
+  -webkit-animation: backgroundScroll 20s linear 10;
+  -webkit-animation-fill-mode: forwards;
+  animation: backgroundScroll 20s linear 10;
+  animation-fill-mode: forwards;
 }
 .learning-header{
   color: #fff;
@@ -220,6 +273,9 @@ figure img:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.hackathon-row{
+  background-image: url(../assets/hack-bg.jpg);
 }
 .fa-chalkboard-user{
   color: #fff;
@@ -234,7 +290,7 @@ figure img:hover {
 .accordion-button{
   background-color: #d1e8e2;
 }
-.fa-building-columns, .fa-graduation-cap, .fa-adversal{
+.fa-building-columns, .fa-graduation-cap, .fa-adversal, .fa-laptop-code, .fa-handshake{
   color: #116466;
   font-size: 5rem;
 }
@@ -547,7 +603,7 @@ figure img:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* width: 100vw; */
+   background-attachment: fixed;
 }
 
 .desc, .text-long, .products-header{
@@ -660,8 +716,22 @@ figure img:hover {
   color: #116466;
 }
 footer{
-  background-color: #116466;
+   background-color: #116466;
+   
+   /* color:#fff; */
+   /* text-align:center; */
+   
 }
+@-webkit-keyframes backgroundScroll {
+  from {background-position: 0 0;}
+  to {background-position: -180px 0px;}
+  }
+  
+  @keyframes backgroundScroll {
+  from {background-position: 0 0;}
+  to {background-position: -180px 0px;}
+  
+  }
 footer p{
   border-bottom: 3px solid #fff;
   color: #fff;
@@ -671,4 +741,9 @@ footer ul li{
   list-style-type: none;
   color: #d1e8e2;
 }
-
+.footer-below p{
+  font-size: .9rem;
+}
+.fa-location-dot, .fa-envelope{
+  font-size: 1.2rem;
+}
